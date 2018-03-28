@@ -1,0 +1,261 @@
+<script type="text/javascript"> 
+<!-- 
+function Reveal (it, box) { 
+var vis = (box.checked) ? "block" : "none"; 
+document.getElementById(it).style.display = vis;
+} 
+
+function Hide (it, box) { 
+var vis = (box.checked) ? "none" : "none"; 
+document.getElementById(it).style.display = vis;
+} 
+
+
+
+//--> 
+</script>
+
+<style>
+	:root{
+		background: #121313;
+		color: #b7b7b7;
+		font: 10px verdana;
+	}
+
+	.dirList{
+		list-style-type: none;
+		padding: 5px;
+		margin: 0;
+		text-align: left;
+		
+	}
+
+	#dirHeader{
+		background: #888888;
+		color: #121212;
+		margin-top: 10px;
+	}
+
+	#liHeader{
+		text-decoration: underline;
+		font-style: oblique;
+		margin-top: 10px;
+		color: #777777;
+	}
+
+</style>
+
+<center>
+<form>
+<input type="checkbox" name="modtype" value="value3" onClick="Reveal('divVictors', this)" />Victors
+</br>
+<input type="checkbox" name="modtype" value="value3" onClick="Reveal('divStylists', this)" />Stylists
+</br>
+<input type="checkbox" name="modtype" value="value4" onClick="Reveal('divGMs', this)" />Gamemakers
+</br>
+<input type="checkbox" name="modtype" value="value4" onClick="Reveal('divMayors', this)" />Mayors
+</br>
+</form>
+
+<div style="width: 225px;">
+
+<div class="row" id="divVictors" style="display:none">
+	<div id="dirHeader"><strong>Victors </strong></div>
+	<ul class="dirList">
+		<li id="liHeader">2010</li>
+		<li>54th: Arbor Halt, D12 (Aya)</li>
+		<li>55th: Aranica Petros, D12 (Wolf Tears)</li>
+		<li>56th: Topaz Ross, D1 (Lulu)</li>
+
+		<li id="liHeader">2011</li>
+		<li>57th: Heron Kimberling, D12 (Tsarashi)</li>
+		<li>58th: Lethe Turner, D5 (Rosetta)</li>
+		<li>59th: Mace Emberstatt, D10 (Kay)</li>
+
+		<li id="liHeader">2012</li>
+		<li>60th: Julian Bryze, D2 (Pthalo)</li>
+		<li>61st: Klaus Goravich, D3 (Clover)</li>
+		<li>62nd: Peridot Myler, D1 (Wonder)</li>	
+
+		<li id="liHeader">2013</li>
+		<li>63rd: Cricket Antoinette, D2 (Lalia)</li>
+		<li>64th: Opal Shore, D1 (Cass)</li>
+		<li>65th: Saffron Lowe, D10 (Zoë)</li>
+
+		<li id="liHeader">2014</li>
+		<li>66th: Colgate O'Leary, D9 (Thundy)</li>
+		<li>67th: Leon Krigel, D4 (Anzie)</li>
+		<li>68th: Patricia Valfierno, D5 (Rook)</li>
+
+		<li id="liHeader">2015</li>
+		<li>69th: Katelyn Persimmon, D11 (Charade)</li>
+		<li>70th: Kirito Miristioma, D11 (Arrows)</li>
+		<li>71st: Harbinger Rhodes, D11 (Cato)</li>
+
+		<li id="liHeader">2016</li>
+		<li>72nd: Atticus Manor, D3 (Mattio)</li>
+		<li>73rd: Justice Fray, D1 (Arx)</li>
+		<li>74th: Ansgar Todd, D10 (Kire)</li>
+
+		<li id="liHeader">2017</li>
+		<li>75th: Shelby Leviane, D8 (Mylee)</li>
+		<li>76th: Teddy Ursa, D6 (Tom)</li>
+		<li>77th: Jacinta Salazar, D7 (Briar)</li>
+	</ul>
+</div>
+
+<div class="row" id="divStylists" style="display:none">
+	<div id="dirHeader"><strong> Stylists </strong></div>
+	<ul class="dirList">
+		<!-- Format:  
+		
+		DX: <a href="BIO_URL">First Name</a> (Gender - <a href="USER_URL">User</a>)
+		-->
+
+		<li>1F: <a href="http://hungergamesrpg.com/thread/81808">Sardonyx</a> (F - <a href="http://hungergamesrpg.com/user/7180">Rave</a>)</li>
+		<li>1M: <a href="http://hungergamesrpg.com/thread/85118">Bambi</a> (F - <a href="http://hungergamesrpg.com/user/5867">Tris</a>)</li>
+		<li>2F: <a href="http://hungergamesrpg.com/thread/85571">Kasia</a> (F - <a href="http://hungergamesrpg.com/user/6493">Solo</a>)</li>
+		<li>2M: Cookie (F)</li>
+		<li>3F: TBA (? - <a href="http://hungergamesrpg.com/user/182">Stare</a>)</li>
+		<li>3M: Orland (M)</li>
+		<li>4F: Harlem (M)</li>
+		<li>4M: Jizav (M)</li>
+		<li>5F: Jules (M)</li>
+		<li>5M: Dio (M)</li>
+		<li>6F: Bacchus (M)</li>
+		<li>6M: Skye (F)</li>
+		<li>7F: <a href="http://hungergamesrpg.com/thread/87799/colt-royale-stylist-fin">Colt</a> (M, <a href="http://hungergamesrpg.com/user/2079">Dars</a>)</li>
+		<li>7M: Moonlight (F)</li>
+		<li>8F: <a href="http://hungergamesrpg.com/thread/80230">Adessia</a> (F - <a href="http://hungergamesrpg.com/user/1855">Arx</a>)</li>
+		<li>8M: Pepper (F)</li>
+		<li>9F: Nile (M)</li>
+		<li>9M: Lepitera (F)</li>
+		<li>10F: TBA (? - <a href="http://hungergamesrpg.com/user/14781">Puppy</a>)</li>
+		<li>10M: Florenza (F)</li>
+		<li>11F: Bloomis (F)</li>
+		<li>11M: <a href="http://hungergamesrpg.com/thread/88441">Marsha</a> (N - <a href="http://hungergamesrpg.com/user/15295">Zori</a>)</li>
+		<li>12F: Bellezze (F)</li>
+		<li>11M: Jenas (M)</li>
+	</ul>
+</div>
+
+<div class="row" id="divGMs" style="display:none">
+	<div id="dirHeader"><strong> Head Gamemakers </strong></div>
+	<ul class="dirList">
+		<li id="liHeader">55th Hunger Games</li>
+		<li>Dom Copperview (Aya)</li>
+		
+		<li id="liHeader">56th Hunger Games</li>
+		<li>-- (Wolf Tears)</li>
+		
+		<li id="liHeader">57th Hunger Games</li>
+		<li>Dom Copperview (Aya)</li>
+		
+		<li id="liHeader">58th Hunger Games</li>
+		<li>Invidia Nox (Lulu)</li>
+		
+		<li id="liHeader">59th Hunger Games</li>
+		<li>Benson Tiero (Dee)</li>
+		<li>-- (Luna)</li>
+		
+		<li id="liHeader">60th Hunger Games</li>
+		<li>Dom Copperview (Aya)</li>
+		
+		<li id="liHeader">61st Hunger Games</li>
+		<li>Invidia Nox (Lulu)</li>
+		
+		<li id="liHeader">62nd Hunger Games</li>
+		<li>Anarcha Bentley (Cameron)</li>
+		<li>Glamour Kinkade (Kay)</li>
+		
+		<li id="liHeader">63rd Hunger Games</li>
+		<li>Warren Whip (Thundy)</li>
+		<li>-- (Wolf Tears)</li>
+		
+		<li id="liHeader">64th Hunger Games</li>
+		<li>Dom Copperview (Aya)</li>
+		
+		<li id="liHeader">65th Hunger Games</li>
+		<li>Invidia Nox (Lulu)</li>
+		
+		<li id="liHeader">66th Hunger Games</li>
+		<li>Azure Herodotus (Rosetta)</li>
+		<li>Jareth Amell (South)</li>
+		
+		<li id="liHeader">67th Hunger Games</li>
+		<li>Glamour Kinkade (Kay)</li>
+		<li>Cadence Fortissimo (Charade)</li>
+		
+		<li id="liHeader">68th Hunger Games</li>
+		<li>Dom Copperview (Aya)</li>
+		<li>Invidia Nox (Lulu)</li>
+		
+		<li id="liHeader">69th Hunger Games</li>
+		<li>Paul Smith (Cass)</li>
+		<li>Murdoch Fenn (Rook)</li>
+		
+		<li id="liHeader">70th Hunger Games</li>
+		<li>Charlie Garnet (Shrimp)</li>
+		<li>Warren Whip (Thundy)</li>
+		
+		<li id="liHeader">71st Hunger Games</li>
+		<li>Dom Copperview (Aya)</li>
+		<li>Capricious King (Kay)</li>
+		
+		<li id="liHeader">72nd Hunger Games</li>
+		<li>Venus Azrael (Python)</li>
+		<li>Vepar Azrael (Nyte)</li>
+		
+		<li id="liHeader">73rd Hunger Games</li>
+		<li>Hazel Dalgaard (Stare)</li>
+		<li>Ambrosia Fae (Avalon)</li>
+		<li>Kyle Riverstone (Chaos)</li>
+		
+		<li id="liHeader">74th Hunger Games</li>
+		<li>Azure Herodotus (Rosetta)</li>
+		<li>Capricious King (Kay)</li>
+		<li>Zaya Reine (Greenbeads)</li>
+		
+		<li id="liHeader">75th Hunger Games</li>
+		<li>Cricket Antoinette (Lalia)</li>
+		<li>Hera Levelwright (Aya)</li>
+		
+		<li id="liHeader">76th Hunger Games</li>
+		<li>Charlie Garnet (Shrimp)</li>
+		<li>Callienta Minorae (Dee)</li>
+		<li>Amethyst Starfyre (Lancelot)</li>
+		
+		<li id="liHeader">77th Hunger Games</li>
+		<li>Venus Azrael (Python)</li>
+		<li>Pidgory Blinkoe (Ali)</li>
+		<li>August Reverie (Ghosty)</li>
+		
+		<li id="liHeader">78th Hunger Games</li>
+		<li>Azazel Fenwick (Elegant)</li>
+		<li>Nilima Rao (Thundy)</li>
+		<li>Zaya Reine (Greenbeads)</li>
+
+	</ul>
+</div>
+
+<div class="row" id="divMayors" style="display:none">
+	<div id="dirHeader"><strong> Mayors </strong></div>
+	<ul class="dirList">
+		<li>D1: Leia Chevalier (<a href="http://hungergamesrpg.com/user/2773">Zoë</a>)</li>
+		<li>D2: Ridley Rohan (<a href="http://hungergamesrpg.com/user/1889">Elegant</a>)</li>
+		<li>D3: Vector Concat (<a href="http://hungergamesrpg.com/user/2918">Rook</a>)</li>
+		<li>D4: Ravi La Torre (<a href="http://hungergamesrpg.com/user/3">Aya</a>)</li>
+		<li>D5: Io Wie (<a href="http://hungergamesrpg.com/user/6294">Shrimp</a>)</li>
+		<li>D6: Calliope Bloom (<a href="http://hungergamesrpg.com/user/1256">Lalia</a>)</li>
+		<li>D7: Bryson Ripsaw (<a href="http://hungergamesrpg.com/user/286">Greenbeads</a>)</li>
+		<li>D8: Pierre Hope (<a href="http://hungergamesrpg.com/user/16447">Frankel</a>)</li>
+		<li>D9: Talon Irvene (<a href="http://hungergamesrpg.com/user/2079">Dars</a>)</li>
+		<li>D10: Mace Emberstatt (<a href="http://hungergamesrpg.com/user/1598">Kay</a>)</li>
+		<li>D11: Kirito Miristioma (<a href="http://hungergamesrpg.com/user/14667">Arrows</a>)</li>
+		<li>D12: Ethuil Aldalómë (<a href="http://hungergamesrpg.com/user/6245">Ems</a>)</li>
+	</ul>
+</div>
+
+</div>
+
+</center>	
